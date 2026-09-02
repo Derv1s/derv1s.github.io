@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Berkay Özgün's Personal Website" />
-    <meta name="keywords" content="Blog, HTML, CSS, JavaScript" />
+    <meta
+      name="description"
+      content="Berkay Özgün - Yazılım geliştirme geçmişine sahip, red team / penetrasyon testi alanında uzmanlaşmayı hedefleyen bir teknik profesyonel."
+    />
+    <meta
+      name="keywords"
+      content="Berkay Özgün, Siber Güvenlik, Red Team, Penetrasyon Testi, Yazılım Geliştirici"
+    />
     <meta name="author" content="Berkay Özgün" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -17,76 +23,152 @@
 
     <link
       rel="shortcut icon"
-      href="./img/berserk-16.png"
+      href="img/berserk-16.png"
       type="image/x-icon"
       id="favicon"
     />
-    <title>Berkay Özgün</title>
+    <title>Berkay Özgün | Yazılım Geliştirici & Siber Güvenlik</title>
   </head>
   <body>
     <header>
       <div class="profile">
-        <img src="./img/2024hdguncelpp.jpg" alt="profile-pic" />
+        <img src="img/2024hdguncelpp.jpg" alt="profile-pic" />
         <div class="profile-info">
           <h1>Berkay Özgün</h1>
-          <p>Yazılım Geliştirici</p>
+          <p>Yazılım Geliştirici | Siber Güvenlik</p>
           <div id="socialMedia">
-            <a href="https://www.linkedin.com/in/berkay-ozgun/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Derv1s" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/berkay-ozgun/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Derv1s" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:berkayburakozgun@gmail.com" aria-label="E-posta"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
       <nav>
-        <a href="#">Anasayfa</a>|
-        <a href="#">Hakkımda</a>|
-        <a href="#">Blog</a>|
+        <a href="#hakkimda">Hakkımda</a>|
+        <a href="#beceriler">Beceriler</a>|
+        <a href="#siber-guvenlik">Siber Güvenlik</a>|
         <a href="#projects">Projeler</a>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h2>
-          Merhaba! Hello! Salam! Hallo! Привет! Hola! こんにちは! Aloha!
-          Bonjour! γεια! Namaste!..
-        </h2>
-        <p>Merhaba, ben Berkay! Web siteme hoş geldiniz.</p>
-        <!-- <p>
-          Burada ilgi alanlarım ile ilgili içerikler paylaşmayı düşünüyorum.
-        </p> -->
-        <p>Keyifli gezintiler!</p>
+      <section id="hakkimda">
+        <h2>Hakkımda</h2>
+        <p>
+          Merhaba, ben Berkay! <br>
+          Yazılım geliştirme geçmişine sahip bir siber güvenlik ilgilisiyim. 
+          C#, .NET ve JavaScript ile projeler geliştirdim; 
+          şu anda ise ilgimi asıl çeken alana, siber güvenliğe
+          ve özellikle <strong>red team / penetrasyon testi</strong>
+          alanında çalışmalar yapıyorum.
+        </p>
+        <p>
+          Sistemlerin nasıl çalıştığını anlama motivasyonumu, artık
+          sistemlerin nasıl kırılabileceğini anlamaya taşıyorum. Şu anda
+          TryHackMe üzerinden uygulamalı olarak siber güvenlik çalışıyorum.
+        </p>
       </section>
 
-      <!-- <section>
-        <h2>Son Blog Yazıları</h2>
-        <ul>
-          <li><a href="#">Blog Yazısı Başlığı 1</a></li>
-          <li><a href="#">Blog Yazısı Başlığı 2</a></li>
-          <li><a href="#">Blog Yazısı Başlığı 3</a></li>
+      <section id="beceriler">
+        <h2>Beceriler</h2>
+        <div class="skill-group">
+          <h3>Ağ &amp; Güvenlik</h3>
+          <div class="tags">
+            <span class="tag">TCP/IP</span>
+            <span class="tag">DNS</span>
+            <span class="tag">DHCP</span>
+            <span class="tag">NAT</span>
+            <span class="tag">HTTP/S</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Windows &amp; Active Directory</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Programlama &amp; Web</h3>
+          <div class="tags">
+            <span class="tag">C#</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">ASP.NET</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Araçlar</h3>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="siber-guvenlik">
+        <h2>Siber Güvenlik Yolculuğu</h2>
+        <p>
+          TryHackMe'nin <strong>Cyber Security 101</strong> öğrenme
+          yolunda ilerliyorum. Şu ana kadar çalıştığım/tamamladığım
+          konular:
+        </p>
+        <ul class="progress-list">
+          <li><i class="fas fa-check"></i> Linux Fundamentals</li>
+          <li><i class="fas fa-check"></i> Windows &amp; Active Directory Fundamentals</li>
+          <li><i class="fas fa-check"></i> Command Line</li>
+          <li><i class="fas fa-check"></i> Networking (DHCP, ARP, NAT, DNS, HTTP/S ve daha fazlası)</li>
         </ul>
-      </section> -->
-      <section class="projects">
-        <h2 id="projects">Projeler</h2>
+        <p>
+          <!-- TODO: Buraya TryHackMe profil linkini ekle -->
+          İlerlememe
+          <a href="https://tryhackme.com/p/Dervis" target="_blank" rel="noopener">TryHackMe</a>
+          üzerinden bakabilirsiniz.
+        </p>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>Projeler</h2>
         <div class="project-card">
           <h3>XOX Oyunu</h3>
-          <a href="https://berkayozgun.dev/XoXGame" target="_blank"><img src="/img/xoxGame.jpg" alt=""/></a>
-          <a class="playBtn" href="https://berkayozgun.dev/XoXGame" target="_blank">Oyna</a>
+          <a href="https://berkayozgun.dev/XoXGame" target="_blank" rel="noopener"><img src="img/xoxGame.jpg" alt="XOX Oyunu ekran görüntüsü"/></a>
+          <p class="project-desc">JavaScript ile geliştirdiğim klasik bir XOX (tic-tac-toe) oyunu.</p>
+          <a class="playBtn" href="https://berkayozgun.dev/XoXGame" target="_blank" rel="noopener">Oyna</a>
         </div>
         <div class="project-card">
           <h3>Keylogger</h3>
-          <a href="https://berkayozgun.dev/Keylogger" target="_blank"><img src="/img/keylogger.png" alt="" /></a>
-          <a class="playBtn" href="https://berkayozgun.dev/Keylogger" target="_blank">Dene</a>
+          <a href="https://berkayozgun.dev/Keylogger" target="_blank" rel="noopener"><img src="img/keylogger.png" alt="Keylogger projesi ekran görüntüsü" /></a>
+          <p class="project-desc">
+            Klavye girdilerinin işletim sistemi seviyesinde nasıl
+            yakalandığını anlamak için geliştirdiğim eğitim amaçlı bir
+            proje.
+          </p>
+          <a class="playBtn" href="https://berkayozgun.dev/Keylogger" target="_blank" rel="noopener">Dene</a>
         </div>
         <div class="project-card">
           <h3>ToDo App</h3>
-          <a href="https://berkayozgun.dev/ToDoApp" target="_blank"><img src="/img/toDoApp.png" alt="" /></a>
-          <a class="playBtn" href="https://berkayozgun.dev/ToDoApp" target="_blank">Dene</a>
+          <a href="https://berkayozgun.dev/ToDoApp" target="_blank" rel="noopener"><img src="img/toDoApp.png" alt="ToDo App ekran görüntüsü" /></a>
+          <p class="project-desc">Basit bir yapılacaklar listesi uygulaması.</p>
+          <a class="playBtn" href="https://berkayozgun.dev/ToDoApp" target="_blank" rel="noopener">Dene</a>
         </div>
+      </section>
+
+      <section class="projects" id="diger-projeler">
+        <h2>Diğer Projeler</h2>
         <div class="project-card">
           <h3>DELİ YÜREK</h3>
-          <a href="https://berkayozgun.dev/DeliYurek" target="_blank"><img src="/img/deliyurek.jpg" alt="" /></a>
-          <a class="playBtn" href="https://berkayozgun.dev/DeliYurek" target="_blank">OKU!</a>
+          <a href="https://berkayozgun.dev/DeliYurek" target="_blank" rel="noopener"><img src="img/deliyurek.jpg" alt="Deli Yürek projesi ekran görüntüsü" /></a>
+          <p class="project-desc">Yusuf Miroğlu Yasaları'nın anlatıldığı bir proje.</p>
+          <a class="playBtn" href="https://berkayozgun.dev/DeliYurek" target="_blank" rel="noopener">OKU!</a>
         </div>
+      </section>
+
+      <section id="iletisim">
+        <h2>İletişim</h2>
+        <p>
+          Benimle iletişime geçmek için
+          <a href="mailto:berkayburakozgun@gmail.com">e-posta</a>
+          gönderebilir ya da
+          <a href="https://www.linkedin.com/in/berkay-ozgun/" target="_blank" rel="noopener">LinkedIn</a>
+          üzerinden ulaşabilirsiniz.
+        </p>
       </section>
     </main>
     <footer>
